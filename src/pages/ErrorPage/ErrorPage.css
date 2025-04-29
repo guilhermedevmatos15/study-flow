@@ -1,0 +1,22 @@
+.ErrorPage {
+   width: 100%;
+   min-height: 100vh;
+   padding: 50px 30px;
+   background-color: var(--color-blue-01);
+   color: #fff;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+
+   h1 {
+      font-size: 3rem;
+   }
+
+   p {
+      opacity: 0.7;
+      max-width: 500px;
+   }
+}
