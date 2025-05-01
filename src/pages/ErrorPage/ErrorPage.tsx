@@ -10,7 +10,7 @@ const ErrorPage: FunctionComponent = () => {
 
 	return (
 		<div className="ErrorPage">
-			<h1>Página não encontrada...</h1>
+			<h1>Erro 404 <br />Página não encontrada...</h1>
 
 			<p>
 				A página que você está procurando não é existente, ela pode ter sido
