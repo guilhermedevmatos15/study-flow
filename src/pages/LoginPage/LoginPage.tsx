@@ -6,6 +6,11 @@ import './LoginPage.css';
 import Button from '../../components/Button/Button';
 import Slider from '../../components/Slider/Slider';
 
+// images
+import Illustration01 from '../../assets/img/illustrations/studying1.svg';
+import Illustration02 from '../../assets/img/illustrations/studying2.svg';
+import Illustration03 from '../../assets/img/illustrations/studying3.svg';
+
 const LoginPage: FunctionComponent = () => {
 	const handleSubmit = useCallback((e: FormEvent): void => {
 		e.preventDefault();
@@ -32,9 +37,9 @@ const LoginPage: FunctionComponent = () => {
 				<section className="right">
 					<Slider
 						elements={[
-							{ text: 'Teste1', image: '' },
-							{ text: 'Teste2', image: '' },
-							{ text: 'Teste3', image: '' },
+							{ text: 'Organize sua rotina!', image: Illustration01 },
+							{ text: 'Tudo em um só lugar!', image: Illustration02 },
+							{ text: 'Auxiliando a realizar seus sonhos!', image: Illustration03 },
 						]}
 					/>
 				</section>

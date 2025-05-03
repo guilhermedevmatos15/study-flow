@@ -1,2 +1,44 @@
 .Slider {
+	text-align: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+
+	.slider-elements {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+		.slider-element {
+         display: none;
+         
+			&.active {
+            display: initial;
+            height: 370px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+			}
+
+         img {
+            width: 100%;
+            max-width: 300px;
+         }
+
+         p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+         }
+		}
+	}
+
+   .slider-controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+   }
 }

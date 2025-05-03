@@ -1,5 +1,7 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 
+import './Slider.css';
+
 import Circle from '../Circle/Circle';
 
 interface SliderProps {
@@ -17,7 +19,7 @@ const Slider: FunctionComponent<SliderProps> = ({ elements }) => {
 			}
 
 			setCurrentIndex(currentIndex + 1);
-		}, 3000);
+		}, 4000);
 
 		return () => clearInterval(timer);
 	}, [currentIndex, elements]);
@@ -27,7 +29,7 @@ const Slider: FunctionComponent<SliderProps> = ({ elements }) => {
 			<div className='slider-elements'>
 				{elements.map((element, index) => (
 					<div className={`slider-element ${currentIndex === index ? 'active' : ''}`} key={index}>
-						<img src={element.image} alt={`Image for element ${index}`} />
+						<img src={element.image} alt={`Image for element ${index + 1}`} />
 
 						<p>{element.text}</p>
 					</div>
@@ -37,12 +39,12 @@ const Slider: FunctionComponent<SliderProps> = ({ elements }) => {
 			<div className='slider-controls'>
 				{elements.map((_, index) => (
 					<Circle
-						key={index}
-						size='30px'
+						size='18px'
 						color='black'
 						empty={currentIndex !== index}
 						pointer={true}
 						onClick={() => setCurrentIndex(index)}
+						key={index}
 					/>
 				))}
 			</div>

@@ -1,0 +1,16 @@
+input {
+   padding: 8px;
+   border: 1px solid var(--color-text);
+   outline: 1px solid transparent;
+   border-radius: 4px;
+   transition: all .6s;
+
+   &:hover {
+      outline: 1px solid var(--color-text);
+   }
+   
+   &:focus {
+      outline: 1px solid var(--color-green-02);
+      border: 1px solid var(--color-green-02);
+   }
+}
