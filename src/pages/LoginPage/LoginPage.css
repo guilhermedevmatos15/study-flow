@@ -1,51 +1,69 @@
 .LoginPage {
 	width: 100%;
-   min-height: 100vh;
+	min-height: 100vh;
 	padding: 50px 30px;
 	display: flex;
-   justify-content: center;
-   align-items: center;
+	justify-content: center;
+	align-items: center;
 
-   main {
-      width: 100%;
-      max-width: 1000px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+	main {
+		width: 100%;
+		max-width: 1000px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-      > * {
-         width: 100%;
-         padding: 30px 20px;
-      }
+		> * {
+			width: 100%;
+			padding: 30px 20px;
+		}
 
-      .left {
-         min-height: max-content;
-         text-align: center;
+		.left {
+			min-height: max-content;
+			text-align: center;
 
-         h1 {
-            font-size: 2.2rem;
+			h1 {
+				font-size: 2.2rem;
+			}
+
+			p {
+				max-width: 500px;
+				margin: 20px auto 0 auto;
+				opacity: 0.9;
+			}
+
+			form {
+				margin-top: 20px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+
+				input {
+					height: 35px;
+				}
+
+				.Button {
+					height: 35px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 870px) {
+	.LoginPage {
+		main {
+			flex-direction: column-reverse;
+
+         .right {
+            padding: 0;
+            display: none;
          }
 
-         p {
-            margin-top: 20px;
-            opacity: 0.9;
+         .left {
+            width: 100%;
          }
-
-         form {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-
-            input {
-               height: 35px;
-            }
-
-            .Button {
-               height: 35px;
-            }
-         }
-      }
-   }
+		}
+	}
 }
