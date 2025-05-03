@@ -7,11 +7,16 @@ import Router from './Router';
 // css
 import './styles/index.css';
 
+// data (contexts)
+import GlobalProvider from './contexts/GlobalProvider';
+
 const App: FunctionComponent = () => {
 	return (
-		<BrowserRouter>
-			<Router />
-		</BrowserRouter>
+		<GlobalProvider>
+			<BrowserRouter>
+				<Router />
+			</BrowserRouter>
+		</GlobalProvider>
 	);
 };
 
