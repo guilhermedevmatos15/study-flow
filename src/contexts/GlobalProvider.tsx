@@ -1,6 +1,6 @@
 import { FunctionComponent, ReactNode } from "react"
 
-import UsersProvider from "./UsersProvider";
+import UsersProvider from "./UserProvider";
 
 const GlobalProvider: FunctionComponent<{ children: ReactNode }> = ({ children }) => {
    return <>
